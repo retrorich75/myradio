@@ -664,8 +664,8 @@ MyradioScreen:
       size_y: dp(15)
 
       Button:
-        on_press: webbrowser.open("http://forecast.io/")
-        text: 'Powered by Forecast.io'
+        on_press: webbrowser.open("http://darksky.net")
+        text: 'Powered by Dark Sky'
         size_hint: None, None
         size: self.parent.width, dp(15)
         background_color: 0,0,0,0
@@ -1345,4 +1345,3 @@ MyradioScreen:
           center_y: self.parent.center_y - app.iconsize
           size_hint: None, None
           size: app.iconsize, app.iconsize / 2
-
