@@ -21,7 +21,7 @@ Until now there are five screens:
   * Player: Main screen with audio player, digital clock, complete alarm view
   * Clock: Analog clock with remaining sleep time
   * Alarm: Alarm settings (two alarms)
-  * Weather: Hourly weather forecast for today and tomorrow - powered by [DarkSky.net](http://DarkSky.net) - if you get an [apikey](https://developer.darksky.net)
+  * Weather: Hourly weather forecast for today and tomorrow - Powered by [DarkSky.net](https://darksky.net/poweredby/) - if you get an [apikey](https://darksky.net/dev/)
   * System: The possibility to reboot/shutdown and update 'myradio' (using git)
 
 ## SCREENSHOTS
