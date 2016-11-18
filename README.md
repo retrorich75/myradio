@@ -7,21 +7,21 @@ myradio(1) --  An alarm clock with a simple audio player and weather forecast
 
 ## DESCRIPTION
 
-A highly configurable alarm clock with support for playing audio files from your filesystem and weather forecast from forecast.io. All works without X - framebuffer is enough.
+A highly configurable alarm clock with support for playing audio files from your filesystem and weather forecast from DarkSky.net (previously forecast.io). All works without X - framebuffer is enough.
 
-Currently it works well with a raspberry and the new released [7 inch touch display](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) - [more information](https://www.raspberrypi.org/blog/the-eagerly-awaited-raspberry-pi-display/).
+Currently it works well with a Raspberry Pi 3 and the official [7 inch touch display](https://www.raspberrypi.org/products/raspberry-pi-touch-display/) - [more information](https://www.raspberrypi.org/blog/the-eagerly-awaited-raspberry-pi-display/).
 Backlight control works with some flaws - see [KNOWN ISSUES].
 
-You can configure which KV-screens you want to see [CONFIGURATION]. It may be possible, that a screen references another - e.g. 'player' has a link to 'alarm' (alarm settings).
+You can configure which KV-screens you want to see [CONFIGURATION]. It may be possible, that a screen references another - for example the 'player' has a link to 'alarm' screen (alarm settings).
 
-The player works file-based - one reason, why i developed `myradio`. Support of filetypes depends on gstreamer and his plugins (the second reason).
+The player works file-based - one reason, why i developed `myradio`. Support of filetypes depends on gstreamer and it's plugins (the second reason).
 
 Until now there are five screens:
 
   * Player: Main screen with audio player, digital clock, complete alarm view
   * Clock: Analog clock with remaining sleep time
   * Alarm: Alarm settings (two alarms)
-  * Weather: Hourly weather forecast for today and tomorrow - powered by [forecast.io](http://forecast.io) - if you get an [apikey](https://developer.forecast.io)
+  * Weather: Hourly weather forecast for today and tomorrow - powered by [DarkSky.net](http://DarkSky.net) - if you get an [apikey](https://developer.darksky.net)
   * System: The possibility to reboot/shutdown and update 'myradio' (using git)
 
 ## SCREENSHOTS
@@ -37,7 +37,7 @@ If you read this using `man`: Screenshots are not converted by `ronn`. Go to [Gi
 
 ## PREREQUISITE
 
-It depends on your configuration. Here is, what i have done for my Raspberry PI:
+It depends on your configuration. Here is, what i have done for my Raspberry Pi 3:
 
   * [Install Python and Kivy](https://github.com/mrichardson23/rpi-kivy-screen) - maybe all steps upto 15 at the time of writing this document; maybe try this [newer documentation](http://kivy.org/docs/installation/installation-rpi.html#manual-installation-on-raspbian-jessie)
   * Install additional required Python packages  `sudo pip install python-forecastio pytz tzlocal`
@@ -250,4 +250,3 @@ Thanks to the whole community - especially the task force from #kivy: bionoid, d
 ## SEE ALSO
 
 [kivy.org](http://kivy.org/)
-
