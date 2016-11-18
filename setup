@@ -27,7 +27,7 @@ sudo python get-pip.py
 echo "### all pip packages ..."
 sudo pip install cython pygments docutils python-forecastio pytz tzlocal
 
-echo "### kivy"
+echo "### download the latest kivy and build it (will take time, have a nap)"
 git clone https://github.com/kivy/kivy
 cd kivy
 python setup.py build
